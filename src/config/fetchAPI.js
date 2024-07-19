@@ -17,7 +17,6 @@ export const getAllTodo = async () => {
 
 export const deleteTodo = async (id) => {
     try {
-        console.log('Deleting')
         const result = await fetch(`${import.meta.env.VITE_URL}/${id}`, {
           method: 'DELETE',
           headers: {
@@ -33,7 +32,6 @@ export const deleteTodo = async (id) => {
 export const completeTodo = async (id, completed) => {
   try {
       const document = {'_id' : id , 'completed' : completed}
-      console.log(`${id} : ${completed}`)
       const result = await fetch(import.meta.env.VITE_URL, {
         method: 'PUT',
         headers: {
@@ -42,7 +40,6 @@ export const completeTodo = async (id, completed) => {
         },
         body : JSON.stringify(document)
       })
-      console.log(result.status)
     } catch (error) {
       console.error('Error fetching data:', error);
     }

@@ -19,8 +19,7 @@ export const useTodoManager = () => {
     
     // Effect Hooks
     useEffect(() => { // Exec on Start
-        setIsFetching(true) 
-        console.log('Fetching')
+        setIsFetching(true)
         fetchGetAll()
       }, [])
 
@@ -55,7 +54,6 @@ export const useTodoManager = () => {
     const fetchDeleteTodo = async (_id) =>{
         try {
             setIsFetching(true)
-            console.log('Deleting') 
             await deleteTodo(_id)
             await fetchGetAll()
         } catch (error) {
@@ -67,7 +65,6 @@ export const useTodoManager = () => {
     const fetchChangeTodoState = async (documento) =>{
         try {
             setIsFetching(true)
-            console.log('Updating') 
             const {_id, completed} = documento
             await completeTodo(_id, !completed)
             await fetchGetAll()
