@@ -1,9 +1,15 @@
-# React + Vite
+## Simple Todo Manager 📝 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a preview of todo-manager-app built from scratch with react, this is adding as part of my hobby and learning project [Simple TO-DO API](https://github.com/Nikorasu-d/rest-api-fastify?tab=readme-ov-file), this site is public deployed on my vercel account and you can check the progress on the following link:
 
-Currently, two official plugins are available:
+[TODO Manager on Vercel App!](https://todo-manager-app-tawny.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# todo-manager-app
+### What you will find on this project? 🫠
+
+- An App fully builted with REACT and Javascript (Deployed Version)
+- An App that can listen from an API and show a TO DO List betrayed from MongoDB (Deployed Version)
+- An App that let you REMOVE and UPDATE the state by clicking buttons (Deployed Version)
+- An App that can CREATE and UPDATE TO DO Tasks (Future Versions)
+- An App that supports USER LOGIN to create and filter CREATED TASKS (Future Versions)
+
+### Thats all 🫂
